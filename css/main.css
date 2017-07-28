@@ -1,7 +1,10 @@
+/* Types */
 
 @@font-face {
 
 }
+
+/* Sizing Html */
 
 html{
   box-sizing: border-box;
@@ -54,6 +57,19 @@ video {
   height: auto;
   max-width: 100%;
 }
+
+/* Demo themes */
+.demo-1 {
+	--background-color: #fff;
+	--background-color-2: #fff;
+	--background-color-3: #fff;
+	--text-color: #fff;
+	--link-color: #fff;
+	--link-hover-color: #fff;
+}
+
+
+/* Media Querys */
 
 @media screen and (max-width: 50em) {
 
