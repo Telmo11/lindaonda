@@ -8,65 +8,193 @@
     <meta name="keywords" content="" />
     <meta name="author" content="The New Digital School"/>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/grild.css">
+    <!-- <link rel="stylesheet" href="../css/grild.css"> -->
+    <link rel="stylesheet" href="../css/foundation.css">
+    <link rel="stylesheet" href="../css/app.css">
   </head>
   <body class="demo-1">
     <div class="parent">
       <!-- /*header */ -->
-        <div class="header nav">
-          <div class="container">
-            <div class="header-left">
-                <a  class="nav-item " href="/">
-                  <img  class="logo-white" src="../assets/logo-white.svg" alt="">
-                </a>
-            </div>
-            <div class="nav-right">
-                <a class="nav-item " href="#">Aulas</a>
-                <a class="nav-item " href="#">Performance</a>
-                <a class="nav-item " href="#">Who we are</a>
-                <a class="nav-item " href="#">Contact</a>
-                <a class="nav-item " href="#">Blog</a>
-                <a class="nav-item " href="#">pt/ en</a>
-
-            </div>
-            <span class="nav-toggle">
-              <a href="/map"><img  class="ic-hive"src="yellow.svg" alt=""></a>
-            </span>
+      <nav class="top-bar topbar-responsive container" style="position:absolute; width:100%; background-color: transparent;">
+          <div class="top-bar-title">
+            <a class="topbar-responsive-logo" href="../index.html"><img src="../assets/logo-white.svg" alt=""></a>
           </div>
-        </div>
+          <div id="topbar-responsive" class="topbar-responsive-links" >
+            <div class="top-bar-right">
+              <ul class="menu simple vertical medium-horizontal" style="color: #fff !important ;background-color: transparent;">
+                <li><a href="#">Clases</a></li>
+                <li><a href="#">Performance</a></li>
+                <li><a href="#">Teachers</a></li>
+                <li><a href="#">Who we are</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <!-- <li>
+                  <button type="button" class="button hollow topbar-responsive-button">Categories</button>
+                </li>
+                <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+                  <button class="menu-icon" type="button" data-toggle></button>
+                </span> -->
+              </ul>
+            </div>
+          </div>
+       </nav>
         <!-- /*End header */ -->
 
+        <!-- /*Hero */ -->
 
-        <!-- /*Main */ -->
+          <div class="surf-site-hero">
+            <div class="surf-site-hero-content">
+              <h1 class="hero-text" >Inspired by te ocean</h1>
+              <p class="subheader">Linha de Onda, school of surf and bodyboard</p>
+              <div class="cta-hero" style="padding:15px">
+                <div class="grid-x">
+                  <div class="small-1 cell grid-container">
+                    <img  class="logo-white" src="../assets/mail.svg" alt="">
+                  </div>
+                  <div class="small-6 cell grid-container">
+                      <input type="text" placeholder="Write here your email and book a class">
+                    </div>
+                  <div class="small-2 cell grid-container">
+                    <a class="button secondary" style="border-radius:30px" href="#">BOOK</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div class="main">
-          <section class="hero">
-              <div class="inner-container">
-                  <h1 class="hero-text">Inspired by te ocean</h1>
-                  <p class="description">Linha de Onda, school of surf and bodyboard</p>
-                  <div class="cta-hero">
-                    <div class="columns">
-                      <div class="column is-2">
-                        <img  class="logo-white" src="../assets/mail.svg" alt="">
+        <!-- /*End Hero */ -->
+
+        <!-- /*Surf, Sea */ -->
+        <section class="type-1">
+            <div class="container">
+              <div class="grid-x">
+                <div class="small-12 large-6 cell">
+                  <img src="../assets/surf-group.jpg" alt="">
+                </div>
+                <div class=" small-12 large-6 cell">
+                  <div class="block-text">
+                    <h1>Surf,<br> Bodyboard,<br> Sea</h1>
+                    <p>We’ve been doing this forever. The sea is our life. We love it. We are crazy about it. All we want is to spread this passion.</p>
+                    <a class="button secondary large" href="#">Know Our Packs</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!-- /*End surf */ -->
+
+        <!-- /*Our People,  */ -->
+        <section class="type-1">
+            <div class="container">
+              <div class="grid-x">
+                <div class="large-6 cell">
+                  <div class="block-text">
+                      <h1>Our Team <br> Our People</h1>
+                      <p>We are surfers, we are graduated in sports and we even have a former world bodyboard champion (twice!) in our team... But what we are really proud of is our friendship and good vibes that unites us. This is our most distinguishing feature.
+                        That’s why you are going to walk out of the ocean wearing a smile on your face!</p>
+                      <a class="button secondary large" href="#">Know Our Teachers</a>
+                   </div>
+                </div>
+                <div class="large-6 cell">
+                  <img src="../assets/teacher.png" alt="">
+                  <p class="description-techer-home"><strong>Manuel Centeno</strong><br> 2x Bodyboard World Champion</p>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!-- /*End People */ -->
+
+        <!-- /*Performace */ -->
+        <section class="type-1">
+            <div class="container">
+              <div class="grid-x">
+                <div class="large-6 cell">
+                  <video id="video" style="width: 100%; height:450px;" autoplay muted loop onclick="" >
+                      <source src="../assets/surf.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="large-6 cell">
+                  <div class="block-text">
+                    <h1>Competition <br> Evolution</h1>
+                    <p>Some people will remember these experiences forever. Others become addicted...
+                      That’s why, beyond the one time events, we have our own competition teams. We taught national champions, we won the Portuguese Bodyboard Cup and our athletes are a recurrent part of the National Team in the European Championship.
+                      If your goal is evolution we have got you covered... If you want to move beyond that: Welcome to the Team!</p>
+                    <a class="button secondary large" href="#">Discover Our Method</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!-- /*End Performance */ -->
+
+        <!-- /*banner */ -->
+
+        <section class="banner-click container">
+            <div class="banner-back">
+                <h1>Do you want to try a class with us? <br> Send us a message!</h1>
+                <div class="cta-hero-2" style="padding:15px">
+                  <div class="grid-x">
+                    <div class="small-1 cell grid-container">
+                      <img  class="logo-white" src="../assets/mail.svg" alt="">
+                    </div>
+                    <div class="small-6 cell grid-container">
+                        <input type="text" placeholder="Write here your email and book a class">
                       </div>
-                      <div class="column">
-                          <input type="text" placeholder="Write here your email and book a class">
-                        </div>
-                      <div class="column is-2">
-                        <a  class="btn-primary-sm">Book</a>
-                      </div>
+                    <div class="small-2 cell grid-container">
+                      <a class="button secondary" style="border-radius:30px" href="#">BOOK</a>
                     </div>
                   </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- /* End banner */ -->
+
+        <!-- /*banner Deeply */ -->
+
+        <section class="banner-click-3">
+            <div class="banner-depply container">
+                <img src="../assets/+++.png" alt="">
+                <h1>Deeply 01156</h1>
+                <p>Use our promocode and get a 10% Discount on Deeply.eu</p>
+            </div>
+        </section>
+
+        <!-- /* End banner */ -->
+
+        <!-- /*Reviews */ -->
+        <section class="type-1">
+          <div class="container" style="text-align:center">
+            <h1>what they say</h1>
+          <div class="grid-x" style="text-align:center">
+              <div class="small-12 large-auto cell">
+                  <img src="../assets/1stGuy.png" alt="">
+                  <p>We highly recommend this school if surfing in Porto region!</p>
+                  <img src="../assets/Rate.svg" alt="">
               </div>
-          </section>
-        </div>
-s
-        <!-- /*End Main */ -->
+              <div class="small-12  large-auto cell">
+                  <img src="../assets/1stGuy.png" alt="">
+                  <p>We highly recommend this school if surfing in Porto region!</p>
+                  <img src="../assets/Rate.svg" alt="">
+              </div>
+              <div class="small-12 large-auto cell">
+                  <img src="../assets/1stGuy.png" alt="">
+                  <p>We highly recommend this school if surfing in Porto region!</p>
+                  <img src="../assets/Rate.svg" alt="">
+              </div>
+          </div>
+          </div>
+
+        </section>
+        <!-- /*End Reviews */ -->
+
+
+
 
 
         <!-- /*Footer */ -->
         <div class="footer">
-          <div class="col-1">
+          <!-- <div class="col-1">
             <ul class="container">
               <li><a href="#">Aulas</a></li>
               <li><a href="#">performance</a></li>
@@ -83,7 +211,7 @@ s
               <li><a href="#">Yepa</a></li>
               <li><a href="#">aulas</a></li>
             </ul>
-          </div>
+          </div> -->
         </div>
     </div>
   </body>
