@@ -1,0 +1,582 @@
+/*.lazyload
+{
+    transition: transform 500ms ease-in-out, opacity 900ms ease-in-out;
+    -webkit-transform: translateY(30px);
+       -moz-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+}
+.lazyload.active
+{
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+}*/
+
+
+
+
+@media (min-width:601px)
+{
+    .banner h1,
+    .banner h1 .sub-h1
+    {
+        color: #fff;
+    }
+}
+@media (min-width:900px)
+{
+    .nav-link
+    {
+        color: #fff;
+    }
+    .nav-link-container:hover .nav-link.active
+    {
+        color: #fff;
+    }
+    .nav-container.stickyNav .nav-link-container .nav-link.active
+    {
+        color: #fff;
+    }
+    .nav-container.stickyNav .nav-link,
+    .nav-container.stickyNav .nav-link-container:hover .nav-link.active
+    {
+        color: #000;
+    }
+    .nav-container.stickyNav .nav-link-container:hover .nav-link:hover
+    {
+        color: #fff;
+    }
+    .nav .logo .black-logo
+    {
+        display: none;
+    }
+    .nav-container.stickyNav .nav .logo .white-logo
+    {
+        display: none;
+    }
+    .nav-container.stickyNav .nav .logo .black-logo
+    {
+        display: block;
+    }
+}
+@media (max-width:899px)
+{
+    .body-wrapper
+    {
+        margin-top: 64px;
+    }
+    .nav .logo .white-logo
+    {
+        display: none;
+    }
+}
+
+/**/
+
+
+
+@media (min-width:900px) {
+
+    .banner
+    {
+        margin-top: -173px;
+        z-index: -2;
+    }
+    .banner h1
+    {
+        top: calc(20% + 173px);
+    }
+}
+@media (max-width:599px)
+{
+    .timeline{
+        margin-top: 90px;
+    }
+}
+@media (min-width:600px)
+{
+
+    .timeline-year.left.blend-timeline-before:before
+    {
+        top: -100px;
+        height: 150px;
+    }
+}
+.timeline-section.contained
+{
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.timeline-year
+{
+    padding: 40px 0;
+    font-size: 0;
+    position: relative;
+}
+.timeline-year.left
+{
+    padding-right: calc(50% - 8px);
+    text-align: right;
+}
+.timeline-year.right
+{
+    padding-left: calc(50% - 8px);
+    text-align: left;
+}
+.timeline-year.left:before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(0,0,0,.06);
+}
+.timeline-year.right:before,
+.timeline-year.right:after,
+.timeline-year.left:before,
+.timeline-year.left:after
+{
+    content: "";
+    position: absolute;
+    height: 51px;
+    width: 2px;
+    left: calc(50% - 1px);
+    background: rgba(0,0,0,.06);
+}
+.timeline-year.right:before
+{
+    top:0;
+}
+.timeline-year.right:after
+{
+    bottom:0;
+}
+.timeline-year.left:before
+{
+    top:0;
+}
+.timeline-year.left:after
+{
+    bottom:0;
+}
+.timeline-year .timeline-line
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 2px;
+    background: rgba(0,0,0,.06);
+    border: none;
+}
+
+.timeline-year.right .timeline-line
+{
+    margin-left: 1px;
+}
+.timeline-year.left .timeline-line
+{
+    margin-right: 1px;
+}
+.timeline-dot
+{
+    height:12px;
+    width: 12px;
+    border: 2px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.timeline-dot.lazyload
+{
+    -webkit-transform: translateY(30px) rotate(45deg);
+    -moz-transform: translateY(30px) rotate(45deg);
+    transform: translateY(30px) rotate(45deg);
+}
+.timeline-dot.lazyload.active
+{
+    -webkit-transform: translateY(0) rotate(45deg);
+    -moz-transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
+}
+.timeline-dot:before
+{
+    content: "";
+    display: block;
+    background: rgba(0,0,0,.4);
+    margin: 4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+}
+.timeline-featured .timeline-dot
+{
+    border-color: #000;
+}
+.timeline-featured .timeline-dot:before
+{
+    background: #000;
+}
+.timeline-year .timeline-featured-dot
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 11px -8px 11px -1px;
+}
+.timeline-winner
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+.timeline-year.right .timeline-winner
+{
+    padding-left: 30px;
+}
+.timeline-year.left .timeline-winner
+{
+    padding-right: 30px;
+}
+@media (max-width:700px) {
+    .timeline-year .timeline-line
+    {
+        width: 10px;
+    }
+    .timeline-year.right .timeline-winner
+    {
+        padding-left: 10px;
+    }
+    .timeline-year.left .timeline-winner
+    {
+        padding-right: 10px;
+    }
+}
+.timeline-year h2
+{
+    font-size: 15px;
+    line-height: 20px;
+}
+.timeline-year h3
+{
+    font-family: MN-BookItalic, MaisonNeue-BookItalic, helvetica, arial, sans-serif;
+    font-size: 15px;
+    color: #2A2A2A;
+    letter-spacing: 0px;
+    line-height: 20px;
+    font-weight: normal;
+    font-style: oblique;
+    margin: 0;
+}
+.timeline-featured
+{
+    position: relative;
+    margin-bottom: 40px;
+}
+.timeline-featured-dot
+{
+    display: block;
+    margin: auto;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    border: 2px solid rgba(0,0,0,.06);
+    margin-bottom: 40px;
+    background-image: url(../images/Billabong-Pipe-Masters-Timeline-Dot.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.timeline-featured .timeline-dot
+{
+    margin-bottom: 40px;
+}
+.timeline-line
+{
+    display: block;
+    width: 2px;
+    height: 40px;
+    background: rgba(0,0,0,.06);
+    margin-left: auto;
+    margin-right: auto;
+}
+.timeline-featured h2
+{
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 24px;
+}
+.timeline-featured h3
+{
+    font-family: MN-BookItalic, MaisonNeue-BookItalic, helvetica, arial, sans-serif;
+    font-size: 18px;
+    color: #2A2A2A;
+    letter-spacing: 0px;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: oblique;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+.winner-back1
+{
+    display: block;
+    background-image: url(../images/Billabong-Pipe-Masters-Winners-Background1.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.winners-contained-image-wrapper
+{
+    display: block;
+    width: 90%;
+    max-width: 1000px;
+    margin: 120px auto;
+    position: relative;
+}
+.winners-contained-image-wrapper:before
+{
+    content: "";
+    position: absolute;
+    top: -120px;
+    bottom: -120px;
+    width: 2px;
+    left: calc(50% - 1px);
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.06) 14%, rgba(0,0,0,0.06) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.06) 14%, rgba(0,0,0,0.06) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.06) 14%, rgba(0,0,0,0.06) 100%);
+}
+.winners-contained-image-wrapper img
+{
+    width: 100%;
+}
+.winners-contained-image-wrapper .annotation-wrapper
+{
+    left: -112px;
+    bottom: 44px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+
+
+.winner-back2
+{
+    display: block;
+    background-image: url(../images/Billabong-Pipe-Masters-Winners-Background2.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.winners-tripple
+{
+    display: block;
+    width: 90%;
+    max-width: 1100px;
+    margin: 90px auto 120px auto;
+    font-size: 0;
+    position: relative;
+}
+.winners-tripple:before
+{
+    content: "";
+    position: absolute;
+    top: -90px;
+    bottom: -120px;
+    width: 2px;
+    left: calc(50% - 1px);
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.06) 14%, rgba(0,0,0,0.06) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.06) 14%, rgba(0,0,0,0.06) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.06) 14%, rgba(0,0,0,0.06) 100%);
+}
+.winners-tripple-left
+{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 18%;
+    border-radius: 3px;
+    margin-right: 4%;
+    margin-bottom: -120px;
+}
+.winners-tripple-main
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+    position: relative;
+}
+.winners-tripple-main img
+{
+    display: block;
+    width: 100%;
+}
+.winners-tripple-main .annotation-wrapper
+{
+    right: -129px;
+    bottom: 50px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.winners-tripple-right
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 26%;
+    border-radius: 3px;
+    margin-left: 7%;
+    margin-top: 90px;
+}
+@media (max-width:900px) {
+    .winners-tripple-left
+    {
+        margin-bottom: -90px;
+    }
+    .winners-tripple-right
+    {
+        margin-top: 60px;
+    }
+}
+@media (max-width:600px) {
+    .winners-tripple-left
+    {
+        margin-bottom: -30px;
+    }
+    .winners-tripple-right
+    {
+        margin-top: 30px;
+    }
+}
+
+.full-image-wrapper
+{
+    margin-top: 90px;
+}
+.full-image-wrapper .winners-overlay-shape
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 90%;
+    width: 90%;
+    pointer-events: none;
+}
+.full-image-wrapper:after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -60px;
+    bottom: 0;
+    left: calc(50% - 1px);
+    width: 2px;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.06) 5%, rgba(0,0,0,0.06) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.06) 5%, rgba(0,0,0,0.06) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.06) 5%, rgba(0,0,0,0.06) 100%);
+}
+.full-image-wrapper .annotation-wrapper
+{
+    top: 14px;
+    right: 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+
+.winner-back3
+{
+    display: block;
+    background-image: url(../images/Billabong-Pipe-Masters-Winners-Background3.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.timeline-featured-wrapper
+{
+    position: relative;
+}
+.timeline-featured-wrapper:before
+{
+    content: "";
+    position: absolute;
+    top: -120px;
+    bottom: -120px;
+    width: 2px;
+    left: calc(50% - 1px);
+    background: rgba(0,0,0,0.06);
+}
+.timeline-featured.shadow
+{
+    background: #fff;
+    width: 90%;
+    max-width: 850px;
+    text-align: center;
+    margin: 120px auto;
+    padding: 80px 120px;
+    box-sizing: border-box;
+}
+
+@media (max-width:900px) {
+    .timeline-featured-wrapper .timeline-featured.shadow
+    {
+        padding: 80px 60px;
+    }
+}
+@media (max-width:600px) {
+    .timeline-featured-wrapper .timeline-featured.shadow
+    {
+        padding: 60px 30px;
+    }
+}
+
+.timeline-featured.shadow .timeline-dot
+{
+    margin-bottom: 20px;
+}
+.timeline-featured-wrapper .winners-overlay-shape
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 90%;
+    pointer-events: none;
+}
+.timeline-year.blend-timeline-before:before,
+.timeline-line.blend-timeline-before
+{
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.06) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.06) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.06) 100%);
+}
+.timeline-year.blend-timeline-after:after
+{
+    background: -moz-linear-gradient(top,  rgba(0,0,0,.06) 100%, rgba(0,0,0,0) 0%);
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,.06) 100%,rgba(0,0,0,0) 0%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,.06) 100%,rgba(0,0,0,0.0) 0%);
+}
+.timeline-year.timeline-end:after
+{
+    display: none;
+}
+.footer
+{
+    margin-top: 90px;
+}

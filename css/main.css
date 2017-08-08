@@ -118,7 +118,18 @@ video {
   padding: 5px;
 }*/
 
+.text-free{
+  position: absolute;
+  margin-top: 110px;
 
+}
+.subheader{
+  color: #fff;
+}
+.free{
+  position: absolute;
+  margin-top: -150px !important;
+}
 .surf-site-hero {
   background: url("../assets/hero.png") top right no-repeat;
   height: 100vh;
@@ -138,7 +149,7 @@ video {
 }
 
 .surf-site-hero-content {
-  max-width: 75rem;
+  max-width: 85rem;
   margin: 0 auto;
   /*padding-left: 5%;*/
   padding-right: 5%;
@@ -160,6 +171,40 @@ video {
     padding-right: 40%;
   }
 }
+.checkboxes{
+  padding: 50px;
+}
+
+.check-img{
+  background-image: url('../assets/check.jpg') no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.button-div{
+  text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.where-are{
+  background-color: #333;
+  
+}
+
+.form-box{
+  margin-top: -250px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05), 0 2px 4px 0 rgba(0,0,0,0.05);
+
+
+}
+
+.container-form{
+  padding: 50px;
+}
 
 .block-text{
   margin: 30px;
@@ -178,7 +223,7 @@ box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05), 0 2px 4px 0 rgba(0,0,0,0.05);
 }
 
 .cta-hero-2{
-margin-top: 70px;
+margin-top: -20px;
 z-index: 5000;
 margin-left: auto;
 margin-right: auto;
@@ -187,6 +232,10 @@ height: 71px;
 background: #fff;
 border: 1px solid #f2f2f2;
 box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05), 0 2px 4px 0 rgba(0,0,0,0.05);
+}
+
+.banner-back h1{
+  padding: 50px;
 }
 
 .description{
@@ -204,6 +253,7 @@ box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05), 0 2px 4px 0 rgba(0,0,0,0.05);
 .footer {
   background-image: url(../assets/Background.png);
   height: 1261px;
+  color:#fff;
 }
 
 
