@@ -195,7 +195,7 @@
     -moz-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-.timeline-dot.lazyload
+/*.timeline-dot.lazyload
 {
     -webkit-transform: translateY(30px) rotate(45deg);
     -moz-transform: translateY(30px) rotate(45deg);
@@ -206,7 +206,7 @@
     -webkit-transform: translateY(0) rotate(45deg);
     -moz-transform: translateY(0) rotate(45deg);
     transform: translateY(0) rotate(45deg);
-}
+}*/
 .timeline-dot:before
 {
     content: "";
@@ -288,7 +288,7 @@
     border-radius: 50%;
     border: 2px solid rgba(0,0,0,.06);
     margin-bottom: 40px;
-    background-image: url(../images/Billabong-Pipe-Masters-Timeline-Dot.png);
+    background-image: url('../assets/logo.png');
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
