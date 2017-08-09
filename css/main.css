@@ -71,7 +71,7 @@ video {
 }
 
 .banner-click{
-  margin-top: -20px;
+  margin-top: 60px;
 
 }
 
@@ -264,6 +264,21 @@ box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05), 0 2px 4px 0 rgba(0,0,0,0.05);
   margin-right: 100px;
   margin-left: 100px;
 
+}
+
+.read-more {
+    position: absolute;
+    bottom: 0;
+}
+
+.title-single-post {
+    margin-left:-50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.arrow {
+    background-image: url(../assets/arrow.svg)
 }
 
 .footer {
